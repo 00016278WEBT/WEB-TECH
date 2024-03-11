@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: gray;
+    background-color: black;
 }
 .logo{
     cursor: pointer;
@@ -41,20 +41,20 @@ header {
 }
 button{
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: gray;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 button:hover {
-    background-color: rgba(0,136,169,1); 
+    background-color: rgb(158, 208, 221); 
 }
 .footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: black;
     margin-top: auto;
 }
 .footer h1{
@@ -75,4 +75,17 @@ button:hover {
 }
 .row {
     width: 300px;
+}
+.index {
+    width: 700px;
+}
+.table-width {
+    width: 5000px;
+}
+.display-table{
+    display: flex;
+    justify-content: center;
+}
+td, th {
+    padding: 15px;
 }

@@ -1,12 +1,13 @@
 <%- include('layout/header') %>
 <div class="container">
-    <div class="">      
-        <div>
+    <div class="table-width">  
+        <div class="display-table">
+            <% if (events != '') { %>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="border">
                         <th>
-                            ID
+                            №
                         </th>
                         <th>
                             name
@@ -41,6 +42,12 @@
                     <% })%>
                 </tbody>
             </table>
+            <% } else {%>  
+                <h1>
+                    No events found in database.
+                </h1>      
+                
+            <% }%>
         </div>
     </div>
 </div>
