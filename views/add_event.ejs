@@ -1,0 +1,32 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div class="columnt">
+            <h1>
+                add event
+            </h1>
+            <form action="/add" method="post" id="add_form">
+                <div class="inputeP">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Name of event" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" placeholder="Description" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" placeholder="Location" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="date">Date</label>
+                    <input type="date" name="date"/>
+                </div>
+                <div class="inputeP">
+                    <input type="submit" name="submit" id=""/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%-include('layout/bottom') %>

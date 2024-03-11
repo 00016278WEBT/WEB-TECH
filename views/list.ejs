@@ -1,0 +1,47 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="">      
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            name
+                        </th>
+                        <th>
+                            description
+                        </th>
+                        <th>
+                            location
+                        </th>
+                        <th>
+                            date
+                        </th>
+                        <th>
+                            action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% events.forEach((row, index) => {   %>
+                        <tr>
+                            <td><%= index %></td>
+                            <td><%= row.name %></td>
+                            <td><%= row.description %></td>
+                            <td><%= row.location %></td>
+                            <td><%= row.date %></td>
+                            <td>
+                                <a href="/edit/<%= row.id %>"><button>edit</button></a>
+                                <a href="/delete/<%= row.id %>"><button>delete</button></a>    
+                            </td>
+                        </tr>
+                    <% })%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<%-include('layout/bottom') %>

@@ -1,0 +1,32 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div class="columnt">
+            <h1>
+                Editing event (<%= event.name %>)
+            </h1>
+            <form action="/update/<%= event.id %>" method="post" id="add_form">
+                <div class="inputeP">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Name of event" value="<%= event.name %>" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" placeholder="Description" value="<%= event.description %>" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" placeholder="Location" value="<%= event.location %>" required/>
+                </div>
+                <div class="inputeP">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" placeholder="Date" value="<%= event.date %>" required/>
+                </div>
+                <div class="inputeP">
+                    <input type="submit" name="submit" valeu="Updaet event" id=""/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%-include('layout/bottom') %>
